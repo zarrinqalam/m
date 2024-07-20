@@ -1,0 +1,406 @@
+
+
+/* CSS
+--------------------------------------------------*/
+body {
+	background: #DEDEDE;
+	color: #000000;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10pt;
+	margin: 0;
+	padding: 0;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,form,fieldset {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+/* Links
+--------------------------------------------------*/
+a {
+	text-decoration: underline;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+a img {
+	border: none;
+}
+
+/* IDs
+--------------------------------------------------*/
+#wrapper {
+	background: transparent;
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#logohead {
+	background: #FFFFFF;
+	text-align: left;
+	padding: 10px;
+}
+
+#logofoot {
+	background: #FFFFFF;
+	text-align: left;
+	padding: 10px;
+}
+
+#pagehead {
+	background: #433A27;
+	color: #FFFFFF;
+	padding: 10px 7px 10px 7px;
+	border: 7px solid #FFFFFF;
+	text-align: left;
+}
+
+#pagehead p {
+	line-height: 13pt;
+}
+
+#subhead {
+	background: #33CC00;
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-family: "Georgia", Times, serif;
+	padding: 7px;
+	border: 7px solid #FFFFFF;
+	text-align: left;
+	margin: 7px 0;
+}
+
+#subhead a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#subhead a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+#subfoot {
+	background: #33CC00;
+	color: #FFFFFF;
+	font-size: 10pt;
+	font-family: "Georgia", Times, serif;
+	padding: 7px;
+	border: 7px solid #FFFFFF;
+	text-align: left;
+	margin: 7px 0;
+}
+
+#subfoot a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#subfoot a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+#mainbox {
+	background: #FFFFFF;
+	color: #000000;
+	padding: 7px;
+	border: 7px solid #FFFFFF;
+	margin: 7px 0;
+}
+
+#pagefoot {
+	background: transparent;
+	color: #000000;
+	margin-top: -20px;
+	margin-bottom: 10px;
+	font-size: 9pt;
+}
+
+#pagefoot strong, #pagehead strong {
+	font-size: 11pt;
+}
+
+#mainimage {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#mainimage img {
+	margin-bottom: 10px;
+	background: #FFFFFF;
+	padding: 0;
+}
+
+#altmainimage {
+	padding: 10px 0 10px 0;
+	margin: 0 0 10px 0;
+	width: 740px;
+	overflow: auto;
+	text-align: center;
+}
+
+/* Classes
+--------------------------------------------------*/
+.low {
+	display: none;
+}
+
+.smalltext {
+	font-size: 8pt;
+}
+
+.clearer {
+	clear: both;
+	line-height: 0;
+}
+
+.left {
+	float: left;
+	clear: right;
+	background: transparent;
+}
+
+.right {
+	float: right;
+	background: transparent;
+}
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.sep {
+	line-height: 0px;
+	height: 1px;
+	border: none;
+	background: #a2c0df;
+	color: #a2c0df;
+	margin: 0;
+	padding: 0;
+}
+
+.seppad {
+	line-height: 0px;
+	height: 1px;
+	border: none;
+	background: #a2c0df;
+	color: #a2c0df;
+	margin: 10px 0 10px 0;
+	padding: 0;
+}
+
+.metatitle {
+	margin-bottom: 10px;
+}
+
+.metatitle1 {
+	font-size: 11pt;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	font-family: "Arial", Helvetica, sans-serif;
+	color: #000000;
+	float: left;
+	margin-right: 8px;
+}
+
+.metatitle1 a {
+	text-decoration: none;
+}
+
+.metatitle1 a:hover {
+	color: #7ba9c4;
+}
+
+.metatitle2 {
+	color: #000000;
+	font-family: "Verdana", Helvetica, sans-serif;	
+	font-size: 7pt;
+	font-style: italic;
+	margin-left: 2px;
+	margin-top: 0.5em;
+	float: left;
+}
+
+.metatitle3 {
+	float: right;
+}
+
+.metatitle4 {
+	float: left;
+}
+
+.metaitem {
+	margin-bottom: 4px;
+}
+
+.thumbcontainer {                                         
+	padding: 5px;                                           
+	height: auto;                                           
+	display: table-cell;                                    
+}                                                         
+
+.thumbmeta {
+	background: #FFFFFF;
+	color: #000000;
+	font-family: "Verdana", Helvetica, sans-serif;	
+	font-size: 7pt;
+	margin-top: 5px;
+	text-align: left;
+	line-height: 12pt;
+	padding-left: 10px;
+}
+
+.metabox {
+	background: #EAFFE1;
+	color: #000000;
+	font-family: "Verdana", Helvetica, sans-serif;	
+	font-size: 10pt;
+	padding: 7px;
+	text-align: left;
+	line-height: 12pt;
+	margin: 0 auto;
+	height: 1px;
+}
+
+html > body .metabox {
+	height: auto;
+}
+
+.paginate {
+	color: #FFFFFF;
+	font-family: "Verdana", Helvetica, sans-serif;
+	font-size: 8pt;
+  padding: 11px 7px 11px 7px;
+	margin: 0px;
+	text-align: center;
+	background: #433A27;
+	border: 7px solid #FFFFFF;
+}
+
+.paginate a {
+	padding: 2px 6px;
+	border: solid 1px #DDDDDD;
+	background: #FFFFFF;
+	color: #000000;
+	text-decoration: none;
+}
+
+.paginate .this-page {
+	padding: 2px 6px;
+	border-color: #999999;
+	font-weight: bold;
+	font-size: 8pt;
+	color: #FFFFFF;
+	vertical-align: top;
+	background: transparent;
+}
+
+.paginate a:hover {
+	color: #000000;
+	background: #EFEFEF;
+	border-color: #E6E6FA;
+	text-decoration: none;
+}
+
+.imagenav .left, .imagenav .right {
+	padding: 6px 0;
+}
+
+.imagenav {
+	color: #000000;
+	margin-bottom: 10px;
+	font-size: 8pt;
+	text-align: center;
+	font-family: "Verdana", Helvetica, sans-serif;	
+}
+
+.imagenav a {
+	color: #000000;
+	padding: 3px 6px;
+	border: solid 1px #DDDDDD;
+	background: #EAFFE1;
+	text-decoration: none;
+}
+
+.imagenav a:hover {
+	color: #000000;
+	background: #F9FFE1;
+	border-color: #E6E6FA;
+	text-decoration: none;
+}
+
+.imagenav .this-page {
+	padding: 3px 6px;
+	border: solid 1px #DDDDDD;
+	background: #FFFFFF;
+	text-decoration: none;
+}
+
+.headimage {
+	position: relative;
+	top: -8px;
+	left: -6px;
+}
+
+html > body .headimage {
+	position: relative;
+	top: -12px;
+	left: -8px;
+}
+
+.slide {
+	background: #ffeec5;
+	padding: 7px;
+	margin-right: 10px;
+}
+
+.nav {
+	background: #ffeec5;
+	padding: 7px;
+}
+
+/* Headings
+--------------------------------------------------*/
+h1 {
+	font-size: 14pt;
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: normal;
+	font-family: "Georgia", Times, serif;
+}
+
+/* Images
+--------------------------------------------------*/
+/* Tables
+--------------------------------------------------*/
+caption {
+	display: none;
+}
+
+table{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+td {
+	padding: 0;
+	margin: 0;
+}
+
+td.thumbtable {
+	text-align: center;
+	padding: 5px;
+}
+

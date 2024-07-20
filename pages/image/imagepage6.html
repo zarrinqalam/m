@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Gallery Title Bar Text</title>
+<link href="../../css/stylesheet.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript1.1">
+		var playing = 0
+		var timeoutID = 0
+		var slideShowNextLink = "../../pages/image/imagepage7.html"
+		var slideShowDelay = 3000
+
+		// Browser detection	
+		var agt = navigator.userAgent.toLowerCase();
+		var is_ie = (agt.indexOf("msie") != -1);
+
+		if (location.href.indexOf("?") != -1) {
+			urlQuery = location.href.split("?")
+			playing = parseInt(urlQuery[1])
+		}
+		
+		if (playing == 1) {
+			startSlideShow()
+		}
+	
+		function slideShow() {
+			window.location.href = slideShowNextLink + "?" + "1"
+			timeoutID = setInterval("slideShow()", slideShowDelay);
+		}
+
+		function startSlideShow() {
+			clearTimeout(timeoutID)
+			timeoutID = setInterval("slideShow()", slideShowDelay);
+		}
+
+		function stopSlideShow() {
+			clearTimeout(timeoutID)
+			if (is_ie) {
+				fakeTimeoutID = setInterval("redirectDelay()", 0);
+			}
+			else {
+				redirectDelay();
+			}
+		}
+		
+		function redirectDelay() {
+			tempArray = window.location.href.split("?")
+			window.location.href = tempArray[0]
+		}
+</script>
+</head>
+<body>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" valign="middle">
+<table width="760" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" valign="middle">
+<div id="wrapper">
+<div id="logohead">
+<img src="../../images/logo/headerlogo.gif" />
+</div>
+<div id="pagehead">
+<h1>My Gallery Title Bar Text</h1>
+</div>
+<div id="subhead">
+<div class="left">Sample Text
+						    				 | 
+						    				Sample Author
+						    				 | 
+						    				21/07/2024</div>
+<div class="right">
+<a href="mailto:sample-email@sample-email.com">sample-email@sample-email.com</a>
+</div>
+<div class="clearer"> </div>
+</div>
+<div id="mainbox">
+<div class="imagenav">
+<div class="left">Slideshow: <a href="javascript:void(0)" name="slideShowControl" onclick="startSlideShow()">Start</a> <a href="javascript:void(0)" name="slideShowControl" onclick="stopSlideShow()">Stop</a>
+</div>
+<div class="right">
+<a href="../../pages/image/imagepage5.html">«</a>  
+										<a href="../../index.html">Home</a>  
+						  			<a href="../../pages/image/imagepage7.html">»</a>
+</div>
+<div class="clearer"> </div>
+</div>
+<div id="mainimage">
+<a href="../../images/fullsize/06.JPG">
+<img src="../../images/image/06.JPG" width="375" height="187" />
+</a>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="thumbtable">
+<div class="metatitle">
+<h2 class="metatitle1">06</h2>
+<span class="metatitle2">15/06/2024 04:26:46 م</span>
+<div class="clearer"> </div>
+</div>
+<div class="metabox">
+<table cellspacing="0">
+<tr>
+<td width="70%">
+<div class="metaitem">
+<strong>Image Properties</strong>  </div>
+</td>
+<td>
+<div class="metaitem">4961x2480x24b</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
